@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartSe</title>
+    <link rel="icon" type="image/x-icon" href="images/MC-logo-removebg-preview.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <script src="https://kit.fontawesome.com/0b165d48f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <img src="./images/cbf6b970c82f8f16ce00ecc603847c3e7cdfbf74_hq.gif" alt="logo" style="height: 70px; width: 200px;" />
+            <div class="menu-section">
+                <div class="container-menu">
+                    <input type="checkbox" id="checkbox-menu" />
+                    <label class="menu-button-container" for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav>
+                        <ul class="menu">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#artigos">Artigos</a>
+                            </li>
+                            <li>
+                                <a href="#form">Inscrição</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="home">
+        <div class="container-main">
+            <div>
+                <h2><span>Venha para a</span></h2>
+                <h2>Mercenary Guild</h2>
+                <h3>
+                    Seja você também um mercenário contratado e tenha tudo que quiser.
+                </h3>
+                <h3>Ouro! Fama! Glória!</h3>
+                <form>
+                    <input type="text" placeholder="Nome" />
+                    <input type="email" placeholder="E-mail" />
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+            <img src="./images/party8.jpg" alt="">
+        </div>
+    </main>
+    <section id="artigos" class="cards">
+        <a href="https://www.rpgplanet.com.br/forum/procura-se-grupo-de-rpg">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/600_461502554.jpeg" />
+                </div>
+
+                <div class="content">
+                    <p class="title text--medium">
+                        Encontre o grupo de RPG mais próximo de você... ou crie seu próprio grupo!
+                    </p>
+                    <div class="info">
+                        <p class="text--medium">57 Min</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="./artigos/futuro/futuro.html">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/e516c77d7d44fc50039144a9b528f5db.png" />
+                </div>
+
+                <div class="content">
+                    <p class="title text--medium">
+                        Novo filme de Dungeons & Dragons encerra as filmagens!
+                    </p>
+                    <div class="info">
+                        <p class="text--medium">57 Min</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="card">
+            <div class="image">
+                <img src="./images/img61929f137662b9.67765412.jpg" />
+            </div>
+
+            <div class="content">
+                <p class="title text--medium">
+                    A revolta dos dados. Quando tudo que tiramos é o que não queremos.
+                </p>
+                <div class="info">
+                    <p class="text--medium">57 Min</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="desafio">
+            <h2>Formulário de inscrição na guilda dos mercenários!</h2>
+            <p>Preencha o formulário abaixo com sabedoria e obtenha o melhor rank na guilda.</p>
+            <form action="">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="race">Raça:</label>
+                    <select name="select" id="race">
+                        <option value="humano">Humano</option>
+                        <option value="elfo">Elfo</option>
+                        <option value="anão">Anão</option>
+                        <option value="gnomo">Gnomo</option>
+                        <option value="meio-orc">Meio-Orc</option>
+                    </select>
+                </div>
+                <div class="combat">
+                    <label for="attack">Ataque:</label>
+                    <input type="range" name="" id="attack">
+                </div>
+                <div class="combat">
+                    <label for="resistenci">Resistência:</label>
+                    <input type="range" id="resistenci">
+                </div>
+                <div class="combat">
+                    <label for="speed">Velocidade:</label>
+                    <input type="range" id="speed">
+                </div>
+                <div>
+                    <label for="hability">Habilidade:</label>
+                    <select name="select-hability" id="hability">
+                        <option value="ataque-poderoso">Ataque Poderoso</option>
+                        <option value="furia">Fúria</option>
+                        <option value="cura">Cura</option>
+                        <option value="ataque-furtivo">Ataque Furtivo</option>
+                        <option value="bencao">Benção</option>
+                        <option value="bola-de-fogo">Bola de Fogo</option>
+                    </select>
+                </div>   
+                <a href="">
+                    <input type="submit" value="Enviar">
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="btn-back-top">
+            <a href="#header" class="back-top" alt="Voltar ao topo." title="Voltar ao topo"><i class="fas fa-caret-square-up"></i></a>
+        </div>
+        <div class="copyright" style="background-color: #f6ebdd; text-align: center; padding: 5px; font-size: 20px;">
+            <p>Desenvolvido por <a id="copy" href="https://github.com/Mario-Cesar-Yzarck" target="_blank"><b>Mário-Cesar-Dev</b></a> &copy; 2022</p>
+        </div>  
+    </footer>
+</body>
+
+</html>
