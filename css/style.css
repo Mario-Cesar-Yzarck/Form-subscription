@@ -11,7 +11,7 @@ body {
     font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background-image: linear-gradient(0deg, #c4170c 0%, #580e08 75%, black 100%);
+    background-image: linear-gradient(0deg, #c4170c 0%, #350905 75%, black 100%);
 } 
 
 /* HEADER */
@@ -195,10 +195,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
+    margin: 60px auto;
     max-width: 980px;
     flex-direction: column;
     border: 10px inset #130d0d;
+    box-shadow: 2px 2px 4px 4px rgb(8, 8, 8);
+    background-color: #615555;
 }
 
 .desafio form {
@@ -253,6 +255,14 @@ a {
     background-color: #611762;
 }
 
+.desafio a {
+    margin-top: 20px;
+}
+
+.desafio h2 {
+    text-shadow: 2px 4px 4px #2e0101;
+}
+
 .btn-back-top {
     padding-left: 30px;
     font-size: 50px;
@@ -263,19 +273,69 @@ a {
 }
 
 @media only screen and (max-width: 460px) {
+    body {
+        max-width: 425px;
+    }
+
+    #header {
+        width: 100%;        
+    }
+
     .container-main h2 {
         margin-left: 0px;
-        padding-left: 0;
+        padding-left: 20px;
         font-size: 36px;
-        text-align: center;
     }
 
     .container-main h3 {
         margin: 0;
         margin-right: 50px;
-        padding: 10px;
+        padding: 20px;
         font-size: 20px;
         max-width: 320px;
         width: 320px;
+    }
+
+    .container-main form input[type="email"], .container-main form input[type="text"] {
+        width: 300px;
+    }
+
+    .container-main form {
+        width: 425px;
+        margin: 10px;
+        align-items: flex-start;
+    }
+    .container-main form input {
+        margin-left: 0;
+    }
+
+    #form {
+        padding: 0;
+    }
+
+    #form .desafio h2, #form .desafio p {
+        margin: 0;
+        padding: 20px 15px;
+    }
+
+    #form .desafio form {
+        margin: 0;
+        padding: 0;
+    }
+
+    #form .desafio form label {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: block;
+        height: 22px;
+    }
+
+    #form .desafio form input {
+        margin: 10px;
+    }
+
+    footer p{
+        font-size: 16px;
     }
 }
